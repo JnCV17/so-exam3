@@ -1,5 +1,0 @@
-[
-  "test_status.py::test_get_cpu_percent",
-  "test_status.py::test_get_available_memory",
-  "test_status.py::test_get_disk_space"
-]

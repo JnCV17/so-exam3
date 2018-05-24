@@ -1,9 +1,0 @@
-actionid: py27
-msg: getenv
-cmdargs: ['/home/flaskdev/.virtualenvs/flask_environment/bin/python', '-m', 'virtualenv', '--python', '/home/flaskdev/.virtualenvs/flask_environment/bin/python2.7', 'py27']
-
-Using real prefix '/usr'
-New python executable in /home/flaskdev/so-exam3/.tox/py27/bin/python2.7
-Also creating executable in /home/flaskdev/so-exam3/.tox/py27/bin/python
-Installing setuptools, pip, wheel...done.
-Running virtualenv with interpreter /home/flaskdev/.virtualenvs/flask_environment/bin/python2.7
