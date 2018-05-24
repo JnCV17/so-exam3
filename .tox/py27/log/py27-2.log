@@ -1,0 +1,22 @@
+actionid: py27
+msg: envreport
+cmdargs: ['/home/flaskdev/so-exam3/.tox/py27/bin/pip', 'freeze']
+
+atomicwrites==1.1.5
+attrs==18.1.0
+click==6.7
+Flask==1.0.2
+funcsigs==1.0.2
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+mock==2.0.0
+more-itertools==4.2.0
+pbr==4.0.3
+pluggy==0.6.0
+psutil==5.4.5
+py==1.5.3
+pytest==3.6.0
+pytest-mock==1.10.0
+six==1.11.0
+Werkzeug==0.14.1

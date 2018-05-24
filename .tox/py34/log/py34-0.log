@@ -1,0 +1,9 @@
+actionid: py34
+msg: getenv
+cmdargs: ['/home/flaskdev/.virtualenvs/flask_environment/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python3.4', 'py34']
+
+Using base prefix '/usr'
+New python executable in /home/flaskdev/so-exam3/.tox/py34/bin/python3.4
+Also creating executable in /home/flaskdev/so-exam3/.tox/py34/bin/python
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /usr/bin/python3.4
