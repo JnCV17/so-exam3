@@ -10,18 +10,18 @@
 Se inicia en la maquina virtual CentOS un nuevo ambiente con nombre flask_environment
 
 ```
-$ mkvirtualenv flask_environment
-$ workon flask_environment
+mkvirtualenv flask_environment
+workon flask_environment
 ```
 
 Una vez dentro de este ambiente, se instalan los paquetes Flask y psutil por medio de
 
 ```
-$ pip install Flask
+pip install Flask
 ```
 
 ```
-$ pip install psutil
+pip install psutil
 ```
 
 Una vez se instalan, se pueden almacenar las librerias instaladas con sus versiones correspondientes en un archivo de texto plano llamado requirements.txt
@@ -33,7 +33,7 @@ pip freeze > requirements.txt
 Clonamos el repositorio so-exam3. Una vez finaliza la clonación, accedemos a so-exam3 y alli creamos un archivo python que llamaremos status.py
 
 ```
-$ vim status.py
+vim status.py
 ```
 
 Este archivo contendra una clase con unos metodos encargados de realizar las consultas de información del sistema (consumo CPU, memoria disponible, espacio de disco duro disponible).
@@ -62,7 +62,7 @@ class Status():
 Tambien creamos un archivo que llamaremos app.py el cual sera el encargado de exponer los servicios del servicio web Flask, haciendo uso de status.py para obtener el consumo de cpu, la memoria disponible y el espacio de disco disponible.
 
 ```
-$ vim app.py
+vim app.py
 ```
 
 ```
@@ -245,4 +245,5 @@ install: pip install tox-travis
 script: tox
 ```
 
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/travis.png)
 
