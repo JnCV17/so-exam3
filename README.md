@@ -99,6 +99,22 @@ Finalmente ejecutamos la aplicacion con el siguiente comando
 python app.py
 ```
 
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/runningApp.png)
+
+**Consulta Uso de CPU**
+
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/status-cpu.png)
+
+**Consulta Memoria disponible**
+
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/status-memory.png)
+
+**Consulta espacio en disco disponible**
+
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/status-disk.png)
+
+**Nota:**
+
 En caso de que las peticiones al servidor no devuelvan respuesta, hay que recordar habilitar el puerto a traves del firewall con el siguiente comando
 
 ```
@@ -174,11 +190,20 @@ Finalmente, ejecutamos las pruebas con el siguiente comando
 pytest -v
 ```
 
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/pytest.png)
+
+
 ## Actividad 5
 
 En este punto se empleara un servicio de integracíon continua que hace uso de las pruebas unitarias desarrolladas para validar los commits a un servicio en linea usando TOX.
 
-Para esto se creara un archivo tox.ini el cual contendra las especificaciones de: libreria para pruebas, lenguaje base (Python3, en este caso), dependencias que se van a usar y el comando que se usara para realizar las pruebas
+Primero instalaremos tox usando el siguiente comando
+
+```
+pip install tox
+```
+
+Una vez instalado tox, se creara un archivo tox.ini el cual contendra las especificaciones de: libreria para pruebas, lenguaje base (Python3, en este caso) y dependencias que se van a usar.
 
 ```
 vim tox.ini
@@ -200,6 +225,8 @@ deps =
 ```
 
 Y ejecutamos las pruebas con el comando **tox**
+
+![alt text](https://raw.githubusercontent.com/JnCV17/so-exam3/A00320192/imagenes/tox.png)
 
 Finalmente, para ejecutar las pruebas de commits, se usaran las pruebas de travis-ci.org, por lo tanto se creara un archivo .travis.yml donde se guardara la configuracion basica para correr las pruebas.
 
