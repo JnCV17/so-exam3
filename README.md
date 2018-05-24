@@ -173,3 +173,49 @@ Finalmente, ejecutamos las pruebas con el siguiente comando
 ```
 pytest -v
 ```
+
+## Actividad 5
+
+En este punto se empleara un servicio de integracíon continua que hace uso de las pruebas unitarias desarrolladas para validar los commits a un servicio en linea usando TOX.
+
+Para esto se creara un archivo tox.ini el cual contendra las especificaciones de: libreria para pruebas, lenguaje base (Python3, en este caso), dependencias que se van a usar y el comando que se usara para realizar las pruebas
+
+```
+vim tox.ini
+```
+
+```
+[tox]
+envlist = py27, py34
+skipsdist = true
+
+[testenv]
+commands = pytest
+deps =
+    mock
+    pytest
+    pytest_mock
+    flask
+    psutil
+```
+
+Y ejecutamos las pruebas con el comando **tox**
+
+Finalmente, para ejecutar las pruebas de commits, se usaran las pruebas de travis-ci.org, por lo tanto se creara un archivo .travis.yml donde se guardara la configuracion basica para correr las pruebas.
+
+```
+vim .travis.yml
+```
+
+```
+sudo: false
+language: python
+notifications:
+  email: false
+python:
+- '3.4'
+install: pip install tox-travis
+script: tox
+```
+
+
